@@ -32,7 +32,8 @@ There are two pages. On the 1st page are two buttons "First name" and "Last name
 
 ### DataBase:
 MongoDB **[MongoDB Atlas(Cloud)](https://www.mongodb.com/cloud/atlas)** serves as our database. Three collections reside within this database:
-- "NONE"
+- "users"
+- "sessions"
 
 ## Prerequisites
 Tools required to successfully execute this application:
@@ -77,5 +78,11 @@ ex. [@W1nSoU](https://t.me/W1nSoU)
 ex. [@bushchakkkkkky](https://t.me/bushchakk)
 
 ## Version History
+* 0.4
+    * add code
+* 0.3
+    * add code
+* 0.2
+    * add code
 * 0.1
     * Initial Release
