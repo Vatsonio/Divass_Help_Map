@@ -2,16 +2,154 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>DivassMap</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=2480, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <script src='./js/main.js'></script>
+    <style>
+
+    </style>
 </head>
 
 <body>
-
+    <div id="container">
+        <div class="silver-box-container">
+            <div class="hero-section">
+                <div class="flex-container-with-spacing">
+                    <div class="flex-row-container">
+                        <img src="assets/img_2_205_efdd29.svg" alt="a brown circle with a shadow on a white background." class="image-container" />
+                        <p class="text-grouping-container"><a href="/"><span class="elegant-text">Divass</span><span class="elegant-text">Map</span></a></p>
+                    </div>
+                    <div class="flex-row-container">
+                        <div class="navbar-container">
+                            <p class="brand-link"><a href="https://github.com/Vatsonio/Divass_Help_Map/tree/main">GitHub</a></p>
+                            <p class="brand-link"><a href="/contact">Contact Us</a></p>
+                            <p class="brand-link"><a href="/about">About Us</a></p>
+                        </div>
+                        <% if (!user) { %>
+                            <button class="button-primary-style"><a href="/register" style="text-decoration: none; color: white;">Sign Up</a></button>
+                            <% } else { %>
+                                <button class="button-primary-style"><a href="/profile" style="text-decoration: none; color: white;"><%= user.username %></a></button>
+                                <% } %>
+                    </div>
+                </div>
+                <div class="container-main">
+                    <div class="flex-row-with-gap">
+                        <div class="search-platform-widget">
+                            <div class="search-missing-persons-platform">
+                                <p class="ukraine-headline-text-style">Пошук зниклих осіб у зоні<br />військового конфлікту</p>
+                                <div class="missing-person-coordination-platform">
+                                    <p class="ukraine-headline">Онлайн-платформа для координації пошуку зниклих осіб у зоні військового конфлікту.</p>
+                                </div>
+                            </div>
+                            <div class="request-form-container">
+                                <p class="add-request-heading">Додати заявку</p>
+                                <div class="action-buttons-container">
+                                    <div class="person-search-button-container">
+                                        <!-- Button Component is detected here -->
+                                        <button class="find-person-button"><a href="/map" style="text-decoration: none; color: white;">Знайти людину</a></button>
+                                    </div>
+                                    <div class="button-container">
+                                        <!-- Button Component is detected here -->
+                                        <button class="add-person-button">Додати людину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vertical-spacing113px" style="padding-left: 33px;">
+                                <div style="display: inline-block; width: 695px" data-ignore="used only for top most containter width">
+                                    <div class="stat-card-container">
+                                        <div class="flex-row-container">
+                                            <div class="svg-container">
+                                                <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <defs>
+                                        <clipPath id="clip1_1_2" xmlns="http://www.w3.org/2000/svg">
+                                          <rect width="24" height="24" fill="white" transform="translate(0, 0)" />
+                                        </clipPath>
+                                      </defs>
+                                      <g id="magnifying-glass--glass-search-magnifying" data-node-id="26:12" clip-path="url(#clip1_1_2)" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="magnifying-glass--glass-search-magnifying_2" data-node-id="26:13">
+                                          <path id="Vector_7" data-node-id="26:14" d="M10.286,19.714c5.207,0 9.428,-4.221 9.428,-9.428c0,-5.208 -4.221,-9.429 -9.428,-9.429c-5.208,0 -9.429,4.221 -9.429,9.429c0,5.207 4.221,9.428 9.429,9.428z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                          <path id="Vector_2_3" data-node-id="26:15" d="M23.143,23.143l-6,-6" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                      </g>
+                                    </svg>
+                                            </div>
+                                            <div class="statistic-card">
+                                                <p class="ukraine-headline-2">25,000</p>
+                                                <p class="statistic-heading">Заявок</p>
+                                            </div>
+                                        </div>
+                                        <div class="data-card-group">
+                                            <div class="vertical-divider-with-text"></div>
+                                            <div class="user-count-container1">
+                                                <div class="svg-container">
+                                                    <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="user-multiple-group--close-geometric-human-multiple-person-up-user" data-node-id="26:6" xmlns="http://www.w3.org/2000/svg">
+                                          <g id="user-multiple-group--close-geometric-human-multiple-person-up-user_2" data-node-id="26:7">
+                                            <path id="Vector_6" data-node-id="26:8" d="M8.571,11.143c2.367,0 4.286,-1.919 4.286,-4.286c0,-2.367 -1.919,-4.286 -4.286,-4.286c-2.367,0 -4.285,1.919 -4.285,4.286c0,2.367 1.918,4.286 4.285,4.286z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector_2_2" data-node-id="26:9" d="M0.857,23.143h7.714h7.715v-0.929c-0.014,-1.307 -0.359,-2.589 -1.002,-3.726c-0.643,-1.138 -1.564,-2.093 -2.677,-2.778c-1.113,-0.685 -2.381,-1.077 -3.687,-1.139c-0.116,-0.005 -0.232,-0.008 -0.349,-0.008c-0.116,0 -0.232,0.003 -0.348,0.008c-1.306,0.062 -2.574,0.454 -3.687,1.139c-1.113,0.685 -2.034,1.64 -2.677,2.778c-0.644,1.137 -0.988,2.419 -1.002,3.726z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector_3_2" data-node-id="26:10" d="M15.429,11.143c2.366,0 4.285,-1.919 4.285,-4.286c0,-2.367 -1.919,-4.286 -4.285,-4.286" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector_4_2" data-node-id="26:11" d="M19.714,23.143h3.429v-0.929c-0.014,-1.307 -0.358,-2.589 -1.002,-3.726c-0.643,-1.138 -1.564,-2.093 -2.677,-2.778c-0.719,-0.443 -1.504,-0.763 -2.321,-0.951" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                          </g>
+                                        </g>
+                                      </svg>
+                                                </div>
+                                                <div class="user-count-container">
+                                                    <p class="user-count-text-style">100,000</p>
+                                                    <p class="user-stats-text-style">Користувачів</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-card-group">
+                                            <div class="vertical-divider-with-text"></div>
+                                            <div class="found-text-container">
+                                                <div class="svg-container">
+                                                    <svg viewBox="0 0 24 24" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="multiple-file-2--double-common-file" data-node-id="26:17" xmlns="http://www.w3.org/2000/svg">
+                                          <g id="multiple-file-2--double-common-file_2" data-node-id="26:18">
+                                            <path id="Vector" data-node-id="26:19" d="M15.429,4.286h-10.286c-0.947,0 -1.714,0.767 -1.714,1.714v15.429c0,0.946 0.767,1.714 1.714,1.714h10.286c0.946,0 1.714,-0.768 1.714,-1.714v-15.429c0,-0.947 -0.768,-1.714 -1.714,-1.714z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector_2" data-node-id="26:20" d="M6.857,8.571h6.857" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector_3" data-node-id="26:21" d="M6.857,12.857h6.857" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector_4" data-node-id="26:22" d="M6.857,17.143h3.429" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path id="Vector_5" data-node-id="26:23" d="M7.714,0.857h11.143c0.455,0 0.891,0.181 1.212,0.502c0.322,0.322 0.502,0.758 0.502,1.212v16.286" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                          </g>  
+                                        </g>
+                                      </svg>
+                                                </div>
+                                                <div class="found-info-container">
+                                                    <p class="ukraine-number-display-style">500,000</p>
+                                                    <p class="user-stats-text-style">Знайдено</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-platform-map">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2qeIf2N5-JvWuin9pXAANLFHfGHUQT9E&callback=initMap">
+</script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./js/map.js"></script>
 
 </html>

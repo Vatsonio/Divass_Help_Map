@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Profile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <script src='./js/main.js'></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="silver-box-container">
+            <div class="hero-section">
+                <div class="flex-container-with-spacing">
+                    <div class="flex-row-container">
+                        <img src="assets/img_2_205_efdd29.svg" alt="a brown circle with a shadow on a white background." class="image-container" />
+                        <p class="text-grouping-container"><a href="/"><span class="elegant-text">Divass</span><span class="elegant-text">Map</span></a></p>
+                    </div>
+                    <div class="flex-row-container">
+                        <div class="navbar-container">
+                            <p class="brand-link"><a href="https://github.com/Vatsonio/Divass_Help_Map/tree/main">GitHub</a></p>
+                            <p class="brand-link"><a href="/contact">Contact Us</a></p>
+                            <p class="brand-link"><a href="/about">About Us</a></p>
+                        </div>
+                        <% if (!user) { %>
+                            <button class="button-primary-style"><a href="/register" style="text-decoration: none; color: white;">Sign Up</a></button>
+                            <% } else { %>
+                                <button class="button-primary-style"><a href="/profile" style="text-decoration: none; color: white;"><%= user.username %></a></button>
+                                <% } %>
+                    </div>
+                </div>
+
+                <div class="container-main">
+                    <div class="flex-row-with-gap" style="padding-right: 0;">
+                        <div class="container" style="padding: 0 0 4em 0;">
+                            <div>
+                                <p class="ukraine-headline-text-style">Profile Detail</p>
+                            </div>
+                            <div>
+                                <center>
+                                    <table class="ukraine-headline" style="justify-content: center; align-items: center; white-space: none; max-width: none;">
+                                        <tr>
+                                            <td>Name </td>
+                                            <td>
+                                                <%= name %>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email </td>
+                                            <td>
+                                                <%= email %>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Role </td>
+                                            <td>
+                                                <%= role %>
+                                            </td>
+                                        </tr>
+                                        <% if (role == 'Волонтер') { %>
+                                            <tr>
+                                                <td>Заявки взяті на себе </td>
+                                                <td>
+                                                    <%= requestsSubmitted %>
+
+                                                </td>
+                                            </tr>
+                                            <% } else if (role == 'Людина яка потребує допомоги') { %>
+                                                <tr>
+                                                    <td>Подані заявки </td>
+                                                    <td>
+                                                        <%= requestsTaken %>
+                                                    </td>
+                                                </tr>
+                                                <% } %>
+                                    </table>
+                                </center>
+                            </div>
+                            <div class="abc">
+                                <% if (role == 'Волонтер') { %>
+                                    <a href="/" class="btn btn-success">Подивитись заявки</a>
+                                    <% } else if (role == 'Людина яка потребує допомоги') { %>
+                                        <a href="/request-help" class="btn btn-success">Добавити заявку</a>
+                                        <a href="/" class="btn btn-success">Подивитись заявки</a>
+                                        <% } %>
+                                            <a href="/logout" class="btn btn-primary" style="background-color: red; float: right;">Logout</a>
+                            </div>
+                            <div class="abc">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

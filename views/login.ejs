@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <script src="./js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="silver-box-container">
+            <div class="hero-section">
+                <div class="flex-container-with-spacing">
+                    <div class="flex-row-container">
+                        <img src="assets/img_2_205_efdd29.svg" alt="a brown circle with a shadow on a white background." class="image-container" />
+                        <p class="text-grouping-container"><a href="/"><span class="elegant-text">Divass</span><span class="elegant-text">Map</span></a></p>
+                    </div>
+                    <div class="flex-row-container">
+                        <div class="navbar-container">
+                            <p class="brand-link"><a href="https://github.com/Vatsonio/Divass_Help_Map/tree/main">GitHub</a></p>
+                            <p class="brand-link"><a href="/contact">Contact Us</a></p>
+                            <p class="brand-link"><a href="/about">About Us</a></p>
+                        </div>
+                        <% if (!user) { %>
+                            <button class="button-primary-style"><a href="/register" style="text-decoration: none; color: white;">Sign Up</a></button>
+                            <% } else { %>
+                                <button class="button-primary-style"><a href="/profile" style="text-decoration: none; color: white;"><%= user.username %></a></button>
+                                <% } %>
+                    </div>
+                </div>
+
+                <div class="container-main">
+                    <div class="vertical-centered-box">
+                        <div class="login-container">
+                            <form id="form" method="post">
+
+                                <div class="login-section">
+                                    <p class="login-title-text-style">Увійти</p>
+                                    <div class="hierarchical-text-container">
+                                        <input type="text" name="email" placeholder="E-mail" required="" class="input-container-with-border-radius input-style-f62::placeholder" class="form-control" />
+                                    </div>
+                                    <div class="hierarchical-text-container">
+                                        <input type="password" name="password" placeholder="Password" required="" class="input-container-with-border-radius input-style-f62::placeholder" class="form-control" />
+                                    </div>
+                                    <button class="login-button-styled" type="submit" value="Login" class="btn btn-success">Увійти</button>
+                            </form>
+                            <div class="mssg bg-danger">
+                                <span id="check"></span>
+                            </div>
+                            <div id="LangTable">
+                                <a href="/profile" id="aa"></a>
+                            </div>
+
+
+
+
+
+                            <p class="forgot-password-prompt"><a href="./forgotpass.html" style="text-decoration: none; color: rgba(80, 68, 52, 1);"><span class="ukraine-text-heading">Забули</span><span> </span><span class="ukraine-bold-heading">пароль?</span><span></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

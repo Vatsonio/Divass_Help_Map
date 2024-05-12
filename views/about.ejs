@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>About us</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <script src="./js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="silver-box-container">
+            <div class="hero-section">
+                <div class="flex-container-with-spacing">
+                    <div class="flex-row-container">
+                        <img src="assets/img_2_205_efdd29.svg" alt="a brown circle with a shadow on a white background." class="image-container" />
+                        <p class="text-grouping-container"><a href="/"><span class="elegant-text">Divass</span><span class="elegant-text">Map</span></a></p>
+                    </div>
+                    <div class="flex-row-container">
+                        <div class="navbar-container">
+                            <p class="brand-link"><a href="https://github.com/Vatsonio/Divass_Help_Map/tree/main">GitHub</a></p>
+                            <p class="brand-link"><a href="/contact">Contact Us</a></p>
+                            <p class="brand-link"><a href="/about">About Us</a></p>
+                        </div>
+                        <% if (!user) { %>
+                            <button class="button-primary-style"><a href="/register" style="text-decoration: none; color: white;">Sign Up</a></button>
+                            <% } else { %>
+                                <button class="button-primary-style"><a href="/profile" style="text-decoration: none; color: white;"><%= user.username %></a></button>
+                                <% } %>
+                    </div>
+                </div>
+                <div class="container-main">
+                    <div class="team-profile-container1-6">
+                        <p class="majestic-heading-6">Про нас</p>
+                        <div class="team-profile-container-6">
+                            <div class="team-profile-card-6">
+                                <!-- Button Component is detected here -->
+                                <button class="divass-button-6">The Divass</button>
+                                <p class="young-ambitious-developers-6">Ми молоді, амбіційні розробники, які прагнуть до вершин. За такий короткий час ми стали не просто командою, а цілою сімєю. Завдяки цьому ми створили не бізнес продукт, а реальну можливість для людей які цього потребують.<br
+                                    /><br />Наша мета – об&apos;єднати зусилля&nbsp; добровольців, рятувальних служб та організацій для збільшення ефективності розшуку&nbsp; зниклих людей.</p>
+                                <div class="family-portrait-gallery-6">
+                                    <img src="assets/img_58_955_edda7b.svg" alt="a black and white drawing of a striped pattern on a white background." class="boxy-image-6" />
+                                    <img src="assets/img_59_965_5e5aa8.svg" alt="a black and white drawing of a striped pattern on a white background." class="horizontal-image-with-margin-6" />
+                                </div>
+                                <img src="assets/img_47_13_b044af.png" alt="Image" class="divass-image-cover-6" />
+                            </div>
+                            <div class="search-and-rescue-platform-info-6">
+                                <!-- Button Component is detected here -->
+                                <button class="search-platform-button-6">Проєкт</button>
+                                <div class="search-coordination-platform-6">
+                                    <div class="ukraine-platform-info-6">
+                                        <span>Онлайн-платформа для координації пошуку зниклих осіб у зоні військового конфлікту. <br /><br />Основні функції сайту:</span>
+                                        <ul class="search-functions-list-6">
+                                            <li>Функція 1</li>
+                                            <li>Функція 2</li>
+                                            <li>Функція 3</li>
+                                            <li>Функція 4</li>
+                                            <li>Функція 5<br /></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="search-coordination-platform-details-6">
+                                        <li>Функція 6</li>
+                                        <li>Функція 7</li>
+                                        <li>Функція 8</li>
+                                        <li>Функція 9</li>
+                                        <li>Функція 10</li>
+                                    </ul>
+                                    <img src="assets/image 2.png" alt="diagram" class="diagram" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

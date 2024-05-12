@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>register</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <script src='./js/main.js'></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="silver-box-container">
+            <div class="hero-section">
+                <div class="flex-container-with-spacing">
+                    <div class="flex-row-container">
+                        <img src="assets/img_2_205_efdd29.svg" alt="a brown circle with a shadow on a white background." class="image-container" />
+                        <p class="text-grouping-container"><a href="/"><span class="elegant-text">Divass</span><span class="elegant-text">Map</span></a></p>
+                    </div>
+                    <div class="flex-row-container">
+                        <div class="navbar-container">
+                            <p class="brand-link"><a href="https://github.com/Vatsonio/Divass_Help_Map/tree/main">GitHub</a></p>
+                            <p class="brand-link"><a href="/contact">Contact Us</a></p>
+                            <p class="brand-link"><a href="/about">About Us</a></p>
+                        </div>
+                        <% if (!user) { %>
+                            <button class="button-primary-style"><a href="/register" style="text-decoration: none; color: white;">Sign Up</a></button>
+                            <% } else { %>
+                                <button class="button-primary-style"><a href="/profile" style="text-decoration: none; color: white;"><%= user.username %></a></button>
+                                <% } %>
+                    </div>
+                </div>
+                <div class="container-main">
+                    <div class="registration-form-container1" id="form1">
+                        <div class="registration-form-container">
+                            <p class="registration-title-text-style">Реєстрація</p>
+                            <div class="flex-column-with-gap">
+                                <form id="form1" method="post">
+                                    <div class="flex-column-with-gap">
+                                        <div class="flexbox-container">
+                                            <input type="name" name="username" placeholder="First name" required="" class="elegant-input-style input-style-f62::placeholder" />
+                                        </div>
+                                        <div class="flexbox-container">
+                                            <input type="name" name="lastname" placeholder="Last name" required="" class="elegant-input-style input-style-f62::placeholder" />
+                                        </div>
+                                        <div class="flexbox-container">
+                                            <select name="role" required="" class="select-button-container">
+                                                <option value="Волонтер">Волонтер</option>
+                                                <option value="Людина яка потребує допомоги" style="font-size: 15px;">Людина яка потребує допомоги</option>
+                                            </select>
+                                        </div>
+                                        <div class="flexbox-container">
+                                            <button class="confirm-button-style" onclick="showForm2()">Confirm</button>
+                                        </div>
+                                        <div class="flexbox-container">
+                                            <p class="user-prompt-message"><span class="brand-message-text-style">If you already have an account </span><span class="brand-accent-text-color"><a href="/login" style="text-decoration: none; color: rgba(80, 68, 52, 1);">sign in</a></span></p>
+                                        </div>
+                                    </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration-form-container1" id="form2" style="display: none;">
+                        <div class="registration-section-container-2">
+                            <div class="registration-form-container-2">
+                                <p class="registration-title-style-2">Реєстрація</p>
+                                <div class="action-panel1-2">
+                                    <div class="flexbox-container-2">
+                                        <input type="email" name="email" placeholder="E-mail" required="" class="input-container-with-border-radius-and-text-formatting-2 input-style-f62::placeholder" class="form-control" />
+                                    </div>
+                                    <div class="flexbox-container-2">
+                                        <input type="password" name="password" placeholder="Password" required="" class="input-container-with-border-radius-and-text-formatting-2 input-style-f62::placeholder" class="form-control" />
+                                    </div>
+                                    <div class="flexbox-container-2">
+                                        <input type="password" name="passwordConf" placeholder="Confirm Password" required="" class="input-container-with-border-radius-and-text-formatting-2 input-style-f62::placeholder" class="form-control" />
+                                    </div>
+                                    <button type="submit" value="Register" class="action-button-2">Дія.Підпис</button>
+                                    <div class="action-panel-2">
+                                        <div class="registration-box-2">
+                                            <div class="svg-container-2">
+                                                <svg viewBox="0 0 18 18" x="0" y="0" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Chevron" data-node-id="36:224" opacity="0.8" d="M14,1.5l-10,7.5l10,7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" /></a></svg>
+                                            </div>
+                                        </div>
+                                        <div class="register-container-2">
+                                            <button class="registration-title-2" input type="submit" value="Register">Зареєструватися</button>
+                                        </div>
+                                    </div>
+                                    <p class="message-box-2"><span class="ukraine-head-text">Якщо ти вже маєш акаунт то</span><span class="elegant-font"> </span><span class="ukraine-sign-in-text">увійди</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function showForm2() {
+        document.getElementById('form1').style.display = 'none';
+        document.getElementById('form2').style.display = 'block';
+    }
+</script>
+
+</html>

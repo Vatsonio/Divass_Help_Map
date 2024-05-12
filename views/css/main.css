@@ -635,7 +635,7 @@ p {
     width: 100%;
     height: 44px;
     padding-left: 19px;
-    font: 100 20px e-UkraineHead;
+    font: 100 20px e-Ukraine;
     border: 2px solid rgba(0, 0, 0, 1);
     border-radius: 15px;
 }
@@ -832,6 +832,8 @@ p {
     font: 100 20px e-UkraineHead;
     color: rgba(255, 255, 255, 1);
     white-space: pre-wrap;
+    border: none;
+    background: none;
 }
 
 .message-box-2 {
@@ -1499,7 +1501,227 @@ p {
 }
 
 
+/* --------------------- ABOUT US ----------------------- */
+
+.team-profile-container1-6 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: flex-start;
+    max-width: 1310px;
+    padding-right: 17px;
+    padding-left: 19px;
+    margin-top: 35px;
+}
+
+.majestic-heading-6 {
+    flex: 0 0 auto;
+    font: 700 48px/48px e-Ukraine;
+    color: rgba(80, 68, 52, 1);
+    white-space: pre-wrap;
+}
+
+.team-profile-container-6 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: stretch;
+    align-self: stretch;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.team-profile-card-6 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 11px;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 50.86%;
+    padding-right: 35px;
+}
+
+.divass-button-6 {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    align-self: center;
+    width: 247px;
+    min-width: 247px;
+    height: 58px;
+    font: 400 32px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: none;
+    border-radius: 20px;
+}
+
+.young-ambitious-developers-6 {
+    flex: 0 0 auto;
+    align-self: center;
+    margin-top: 4px;
+    font: 400 18px/27px e-Ukraine;
+    color: rgba(90, 120, 112, 1);
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.family-portrait-gallery-6 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: flex-start;
+    margin-left: -17px;
+}
+
+.boxy-image-6 {
+    box-sizing: border-box;
+    display: block;
+    width: 104px;
+    max-width: initial;
+    height: 30px;
+}
+
+.horizontal-image-with-margin-6 {
+    box-sizing: border-box;
+    display: block;
+    width: 104px;
+    max-width: initial;
+    height: 30px;
+    margin-left: 240px;
+}
+
+.divass-image-cover-6 {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    max-width: initial;
+    height: 330px;
+    clip-path: undefined;
+    border: none;
+    border-radius: 20px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+}
+
+.search-and-rescue-platform-info-6 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 49.14%;
+    padding-bottom: 382px;
+    padding-left: 15px;
+}
+
+.search-platform-button-6 {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    width: 191px;
+    min-width: 191px;
+    height: 58px;
+    margin-left: -18px;
+    font: 400 32px e-Ukraine;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    background: rgba(80, 68, 52, 1);
+    border: none;
+    border-radius: 20px;
+}
+
+.search-coordination-platform-6 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: stretch;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.ukraine-platform-info-6 {
+    flex: 0 0 auto;
+    font: 400 18px/27px e-Ukraine;
+    color: rgba(90, 120, 112, 1);
+    text-align: left;
+}
+
+.search-functions-list-6 {
+    padding: 0;
+    margin: 0;
+}
+
+.search-coordination-platform-details-6 {
+    flex: 0 0 auto;
+    padding: 0 48px 0 335px;
+    margin: -131px 0 0;
+    font: 400 18px/27px e-Ukraine;
+    color: rgba(90, 120, 112, 1);
+    text-align: left;
+}
+
+.diagram {
+    margin-top: 38px;
+    margin-left: 75px;
+    width: 587px;
+    height: 352px;
+}
+
+
+/* --------------------- ABOUT US - END ----------------------- */
+
+
 /* --------------------- INFO - END ----------------------- */
+
+.flex-row-with-gap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    width: 100%;
+    margin-top: 2em;
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: 3em;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin-top: 2em;
+    color: #fff;
+    border-radius: 7px;
+    font-family: e-Ukraine;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
 
 @media screen and (max-width: 600px) {
     .silver-box-container,

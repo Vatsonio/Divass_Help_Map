@@ -19,39 +19,16 @@
 
 ## Description
 
-NONE
-
-## Getting Started
-
-NONE
+Hello everyone, we are The Divas team. We made this platform for coordinating the search for missing persons in the military conflict zone with our own efforts in 24 hours of painstaking work. The main idea was to make a one-page, non-scroll site that would simplify the search for missing soldiers and family members for volunteers and their families.
 
 ### •Main Form:
 
-NONE
+As soon as you enter this minimalistic site, you are immediately met on the left side with information about this project, the number of registered applications and people already found. On this part, there are two buttons - "Add a person" and "Find a person", which you can click on if you click on "Add application" provided that if you do not have an account created, the site will make it easy for you if you already have it, then you can add information about the missing person you want to find. If you click on the button "Find a person", an expanded map will open to you, where you can see all the people who have not been found so far.
 
 ### •Registration Form:
 
-NONE
+There are two pages. On the 1st page are two buttons "First name" and "Last name". On the 2nd page there are 4 buttons "Email", "Password", "Confirm Password" and "Diya Pidpus"
 
-### •Login Form:
-
-NONE
-
-### •User's Profile:
-
-NONE
-
-### •Request-help Form:
-
-NONE
-
-### •Contact Form:
-
-NONE
-
-### •About Form:
-
-NONE
 
 ### DataBase:
 MongoDB **[MongoDB Atlas(Cloud)](https://www.mongodb.com/cloud/atlas)** serves as our database. Three collections reside within this database:
