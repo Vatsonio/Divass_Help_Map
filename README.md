@@ -19,7 +19,7 @@
 
 ## Description
 
-NONE
+Hello everyone, we are The Divas team. We made this platform for coordinating the search for missing persons in the military conflict zone with our own efforts in 24 hours of painstaking work. The main idea was to make a one-page, non-scroll site that would simplify the search for missing soldiers and family members for volunteers and their families. As soon as you enter this minimalistic site, you are immediately met on the left side with information about this project, the number of registered applications and people already found. On this part, there are two buttons - "Add a person" and "Find a person", which you can click on if you click on "Add application" provided that if you do not have an account created, the site will make it easy for you if you already have it, then you can add information about the missing person you want to find. If you click on the button "Find a person", an expanded map will open to you, where you can see all the people who have not been found so far. You can click on the photo icon of this person, but in order to find out additional information about the recent location of the missing person, the site will ask you to log in or register an account. On the right side of the site, you will be able to see a map with a random enlarged location on the map where you can find several missing people. My team and I wanted to make this project look like an app and make it as practical and minimalistic as possible. For security and validity of information, every user of our site must link "DiyaPidpis". Among other interesting functions, we decided to add an anonymous chat to clarify the information of a volunteer with a person who is looking for his relatives.
 
 ## Getting Started
 
