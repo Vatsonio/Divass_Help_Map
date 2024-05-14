@@ -81,6 +81,10 @@ p {
     border: 0;
 }
 
+input {
+    background-color: white;
+}
+
 .silver-box-container {
     box-sizing: border-box;
     width: 100%;
@@ -163,7 +167,7 @@ p {
 }
 
 .navbar-container a:hover {
-    color: rgba(90, 120, 112, 1);
+    color: black;
 }
 
 .brand-link {
@@ -631,6 +635,7 @@ p {
 }
 
 .elegant-input-style {
+    background-color: white;
     box-sizing: border-box;
     width: 100%;
     height: 44px;
@@ -645,6 +650,7 @@ p {
 }
 
 .select-button-container {
+    background-color: white;
     box-sizing: border-box;
     display: flex;
     flex: 0 0 auto;
@@ -996,6 +1002,7 @@ p {
 }
 
 .input-container-with-border-radius-and-text-formatting {
+    background-color: white;
     box-sizing: border-box;
     width: 100%;
     height: 44px;
@@ -1395,7 +1402,7 @@ p {
     font: 400 18px e-Ukraine;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
-    background: rgba(90, 120, 112, 1);
+    background: black;
     border: none;
     border-radius: 11px;
 }
@@ -1444,7 +1451,7 @@ p {
     font: 400 18px e-Ukraine;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
-    background: rgba(90, 120, 112, 1);
+    background: black;
     border: none;
     border-radius: 11px;
 }
@@ -1511,7 +1518,6 @@ p {
     align-items: center;
     align-self: center;
     justify-content: flex-start;
-    max-width: 1310px;
     padding-right: 17px;
     padding-left: 19px;
     margin-top: 35px;
@@ -1531,7 +1537,7 @@ p {
     align-items: stretch;
     align-self: stretch;
     justify-content: flex-start;
-    margin-top: 15px;
+    margin-top: 65px;
 }
 
 .team-profile-card-6 {
@@ -1567,7 +1573,7 @@ p {
     align-self: center;
     margin-top: 4px;
     font: 400 18px/27px e-Ukraine;
-    color: rgba(90, 120, 112, 1);
+    color: black;
     text-align: left;
     white-space: pre-wrap;
 }
@@ -1609,7 +1615,7 @@ p {
     border: none;
     border-radius: 20px;
     mix-blend-mode: normal;
-    object-fit: cover;
+
 }
 
 .search-and-rescue-platform-info-6 {
@@ -1653,34 +1659,232 @@ p {
 .ukraine-platform-info-6 {
     flex: 0 0 auto;
     font: 400 18px/27px e-Ukraine;
-    color: rgba(90, 120, 112, 1);
+    color: black;
     text-align: left;
 }
 
-.search-functions-list-6 {
-    padding: 0;
+/* .search-functions-list-6 {
     margin: 0;
-}
+} */
 
 .search-coordination-platform-details-6 {
     flex: 0 0 auto;
     padding: 0 48px 0 335px;
     margin: -131px 0 0;
     font: 400 18px/27px e-Ukraine;
-    color: rgba(90, 120, 112, 1);
+    color: black;
     text-align: left;
 }
 
 .diagram {
-    margin-top: 38px;
-    margin-left: 75px;
-    width: 587px;
-    height: 352px;
+    align-items: center;
+    padding-top: 2rem;
+
+    height: 330px;
+
 }
 
 
 /* --------------------- ABOUT US - END ----------------------- */
 
+
+/* line 1, /stdin */
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  /* line 13, /stdin */
+  .donut {
+    --donut-size: 300px;
+    --donut-border-width: 20px;
+    --donut-spacing: 0;
+    --donut-spacing-color: 255, 255, 255;
+    --donut-spacing-deg: calc(1deg* var(--donut-spacing));
+    /* border-radius: 50%; */
+    height: var(--donut-size);
+    margin: 40px auto; /* Змінено тут */
+    position: relative;
+    width: var(--donut-size);
+    display: block; /* Додано тут */
+}
+
+  
+  /* line 28, /stdin */
+  .donut__label {
+    left: 50%;
+    line-height: 1.5;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  
+  /* line 38, /stdin */
+  .donut__label__heading {
+    font-size: 24px;
+    font-weight: 600;
+    font: 400 1.375rem e-Ukraine;
+  }
+  
+  /* line 43, /stdin */
+  .donut__label__sub_1 {
+    color: #ff6838;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font: 400 1rem e-Ukraine;
+  }
+  
+  /* line 48, /stdin */
+  .donut__label__sub_2 {
+    color: #ffc820;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font: 400 1rem e-Ukraine;
+  }
+  
+  /* line 53, /stdin */
+  .donut__label__sub_3 {
+    color: #97c95c;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font: 400 1rem e-Ukraine;
+  }
+  
+  /* line 58, /stdin */
+  .donut__slice {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* line 64, /stdin */
+  .donut__slice::before,
+  .donut__slice::after {
+    border: var(--donut-border-width) solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    width: 100%;
+  }
+  
+  /* line 77, /stdin */
+  .donut__slice::before {
+    border-width: calc(var(--donut-border-width) + 1px);
+    box-shadow: 0 0 1px 0 rgba(var(--donut-spacing-color), calc(100 * var(--donut-spacing)));
+  }
+  
+  /* line 97, /stdin */
+  .donut__slice__first {
+    --first-start: 0;
+  }
+  
+  /* line 102, /stdin */
+  .donut__slice__first::before {
+    border-top-color: rgba(var(--donut-spacing-color), calc(100 * var(--donut-spacing)));
+    transform: rotate(calc(360deg * var(--first-start) + 45deg));
+  }
+  
+  /* line 107, /stdin */
+  .donut__slice__first::after {
+    border-top-color: #ff6838;
+    border-right-color: rgba(255, 104, 56, calc(100 * (var(--first) - .25)));
+    border-bottom-color: rgba(255, 104, 56, calc(100 * (var(--first) - .5)));
+    border-left-color: rgba(255, 104, 56, calc(100 * (var(--first) - .75)));
+    transform: rotate(calc(360deg * var(--first-start) + 45deg + var(--donut-spacing-deg)));
+  }
+  
+  /* line 90, /stdin */
+  .donut__slice__second {
+    --second-start: calc(var(--first));
+    --second-check: max(calc(var(--second-start) - .5), 0);
+    clip-path: inset(0 calc(50% * (var(--second-check) / var(--second-check))) 0 0);
+  }
+  
+  /* line 102, /stdin */
+  .donut__slice__second::before {
+    border-top-color: rgba(var(--donut-spacing-color), calc(100 * var(--donut-spacing)));
+    transform: rotate(calc(360deg * var(--second-start) + 45deg));
+  }
+  
+  /* line 107, /stdin */
+  .donut__slice__second::after {
+    border-top-color: #ffc820;
+    border-right-color: rgba(255, 200, 32, calc(100 * (var(--second) - .25)));
+    border-bottom-color: rgba(255, 200, 32, calc(100 * (var(--second) - .5)));
+    border-left-color: rgba(255, 200, 32, calc(100 * (var(--second) - .75)));
+    transform: rotate(calc(360deg * var(--second-start) + 45deg + var(--donut-spacing-deg)));
+  }
+  
+  /* line 90, /stdin */
+  .donut__slice__third {
+    --third-start: calc(var(--first) + var(--second));
+    --third-check: max(calc(var(--third-start) - .5), 0);
+    clip-path: inset(0 calc(50% * (var(--third-check) / var(--third-check))) 0 0);
+  }
+  
+  /* line 102, /stdin */
+  .donut__slice__third::before {
+    border-top-color: rgba(var(--donut-spacing-color), calc(100 * var(--donut-spacing)));
+    transform: rotate(calc(360deg * var(--third-start) + 45deg));
+  }
+  
+  /* line 107, /stdin */
+  .donut__slice__third::after {
+    border-top-color: #97c95c;
+    border-right-color: rgba(151, 201, 92, calc(100 * (var(--third) - .25)));
+    border-bottom-color: rgba(151, 201, 92, calc(100 * (var(--third) - .5)));
+    border-left-color: rgba(151, 201, 92, calc(100 * (var(--third) - .75)));
+    transform: rotate(calc(360deg * var(--third-start) + 45deg + var(--donut-spacing-deg)));
+  }
+  
+  /* line 90, /stdin */
+  .donut__slice__fourth {
+    --fourth-start: calc(var(--first) + var(--second) + var(--third));
+    --fourth-check: max(calc(var(--fourth-start) - .5), 0);
+    clip-path: inset(0 calc(50% * (var(--fourth-check) / var(--fourth-check))) 0 0);
+  }
+  
+  /* line 102, /stdin */
+  .donut__slice__fourth::before {
+    border-top-color: rgba(var(--donut-spacing-color), calc(100 * var(--donut-spacing)));
+    transform: rotate(calc(360deg * var(--fourth-start) + 45deg));
+  }
+  
+  /* line 107, /stdin */
+  .donut__slice__fourth::after {
+    border-top-color: #1cb2f6;
+    border-right-color: rgba(28, 178, 246, calc(100 * (var(--fourth) - .25)));
+    border-bottom-color: rgba(28, 178, 246, calc(100 * (var(--fourth) - .5)));
+    border-left-color: rgba(28, 178, 246, calc(100 * (var(--fourth) - .75)));
+    transform: rotate(calc(360deg * var(--fourth-start) + 45deg + var(--donut-spacing-deg)));
+  }
+  
+  /* line 90, /stdin */
+  .donut__slice__fifth {
+    --fifth-start: calc(var(--first) + var(--second) + var(--third) + var(--fourth));
+    --fifth-check: max(calc(var(--fifth-start) - .5), 0);
+    clip-path: inset(0 calc(50% * (var(--fifth-check) / var(--fifth-check))) 0 0);
+  }
+  
+  /* line 102, /stdin */
+  .donut__slice__fifth::before {
+    border-top-color: rgba(var(--donut-spacing-color), calc(100 * var(--donut-spacing)));
+    transform: rotate(calc(360deg * var(--fifth-start) + 45deg));
+  }
+  
+  /* line 107, /stdin */
+  .donut__slice__fifth::after {
+    border-top-color: #1685b8;
+    border-right-color: rgba(22, 133, 184, calc(100 * (var(--fifth) - .25)));
+    border-bottom-color: rgba(22, 133, 184, calc(100 * (var(--fifth) - .5)));
+    border-left-color: rgba(22, 133, 184, calc(100 * (var(--fifth) - .75)));
+    transform: rotate(calc(360deg * var(--fifth-start) + 45deg + var(--donut-spacing-deg)));
+  }
 
 /* --------------------- INFO - END ----------------------- */
 

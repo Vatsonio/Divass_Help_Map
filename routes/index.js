@@ -265,6 +265,10 @@ function calculateRequestsSubmitted(user) {
 router.get('/profile', function(req, res, next) {
     console.log("profile");
     User.findOne({ unique_id: req.session.userId }, function(err, data) {
+        if (err) {
+            console.error(err);
+            return res.status(500).send("Помилка при отриманні профілю користувача.");
+        }
         console.log("data");
         console.log(data);
         if (!data) {

@@ -32,11 +32,6 @@
                             <p class="brand-link"><a href="/contact">Contact Us</a></p>
                             <p class="brand-link"><a href="/about">About Us</a></p>
                         </div>
-                        <% if (!user) { %>
-                            <button class="button-primary-style"><a href="/register" style="text-decoration: none; color: white;">Sign Up</a></button>
-                            <% } else { %>
-                                <button class="button-primary-style"><a href="/profile" style="text-decoration: none; color: white;"><%= user.username %></a></button>
-                                <% } %>
                     </div>
                 </div>
 
@@ -82,7 +77,7 @@
                                                         <%= requestsTaken %>
                                                     </td>
                                                 </tr>
-                                                <% } %>
+                                            <% } %>
                                     </table>
                                 </center>
                             </div>
@@ -104,6 +99,9 @@
             </div>
         </div>
     </div>
+</body>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src='./js/main.js'></script>
 </body>
 
 </html>
