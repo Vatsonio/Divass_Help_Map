@@ -26,6 +26,34 @@ MongoDB **[MongoDB Atlas(Cloud)](https://www.mongodb.com/cloud/atlas)** serves a
 - "users"
 - "sessions"
 
+•Main Form:
+![](https://telegra.ph/file/fc3f6546855047dc1f44b.png)
+
+•BIG map:
+![](https://telegra.ph/file/3ed56e0c55d5c46fdd7e4.png)
+
+•Registration Form 1:
+![](https://telegra.ph/file/1c8134a3f8ad86890bea0.png)
+
+•Registration Form 2:
+![](https://telegra.ph/file/db9f2579d9459daca0ec0.png)
+
+•Login Form:
+![](https://telegra.ph/file/79575f73f27ad2e4743ce.png)
+
+•User's Profile:
+![](https://telegra.ph/file/e098807f8681d50392f49.png)
+
+•Request-help Form:
+![](https://telegra.ph/file/4118dd8bb136c68ecc41d.png)
+
+•Contact Form:
+![](https://telegra.ph/file/e8e2f411a06e564f04511.png)
+
+•About Form:
+![](https://telegra.ph/file/b05317a03c5bd3f92ef14.png)
+
+
 ## Prerequisites
 Tools required to successfully execute this application:
 
